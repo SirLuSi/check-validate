@@ -26,7 +26,7 @@ public class ValidDemoApplication {
 }
 ```
 
-## demo
+## 例一
 ```java
     @CheckValid
     @RequestMapping("hello")
@@ -35,7 +35,7 @@ public class ValidDemoApplication {
         return "hello";
     }
 ```
-## demo
+## 例二
 ```java
     @RequestMapping("hello")
     public String hello(@CheckValid User user) {
@@ -43,7 +43,7 @@ public class ValidDemoApplication {
         return "hello";
     }
 ```
-## 想要自定义验证不通过后的响应？很简单..
+## 想要验证不通过后的自定义响应？很简单..
 ### 继承AbstractReturnDefinition例如:
 ```
 @Component
